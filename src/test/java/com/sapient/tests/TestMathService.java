@@ -105,12 +105,12 @@ class TestMathService {
 		Assertions.assertThrows(InvalidInputException.class, () -> service.isPrime(-20));
 	}
 	
-	@Test
-	void listOfPrimeNumbersValidInput() {
-		List<Long> actual = service.listOfPrimeNumbers(1, 20);
-		List<Long> expected = List.of(2L, 3L, 5L, 7L, 11L, 13L, 17L, 19L);
-		Assertions.assertEquals(expected, actual);
-	}
+	// @Test
+	// void listOfPrimeNumbersValidInput() {
+	// 	List<Long> actual = service.listOfPrimeNumbers(1, 20);
+	// 	List<Long> expected = List.of(2L, 3L, 5L, 7L, 11L, 13L, 17L, 19L);
+	// 	Assertions.assertEquals(expected, actual);
+	// }
 	
 	@Test
 	void listOfPrimeNumbersNegativeInput1() {
