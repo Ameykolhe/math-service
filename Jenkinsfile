@@ -9,7 +9,6 @@ pipeline {
     environment {
         JAR_FILENAME = "math-service"
         JAR_VERSION = "0.0.1-SNAPSHOT"
-        PARAM1 = "Shyam Sundar"
     }
 
     stages {
@@ -27,7 +26,7 @@ pipeline {
 
         stage("Execute Main class") {
             steps {
-                sh "java -cp target/${JAR_FILENAME}-${JAR_VERSION}.jar com.sapient.Main \"${PARAM1}\""
+                sh "java -cp target/${JAR_FILENAME}-${JAR_VERSION}.jar com.sapient.Main isPrime 20"
             }
         }
     }
